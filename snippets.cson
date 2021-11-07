@@ -1,0 +1,31 @@
+'.html':
+  'block':
+    'prefix': 'block'
+    'body': '{% block $1 %}\n{% endblock %}'
+  'trans':
+    'prefix': 'trans'
+    'body': '{% trans $1 %}'
+  'bltrans':
+    'prefix': 'bltrans'
+    'body': '{% blocktrans trimmed %}\n$1\n{% endblocktrans %}'
+  'ifb':
+    'prefix': 'ifb'
+    'body': '{% if $1 %}\n{% endif %}'
+  'for':
+    'prefix': 'for'
+    'body': '{% for $1 in $2 %}\n\t$3\n{% endfor %}'
+  'static':
+    'prefix': 'static'
+    'body': "{% load static %}\n{% static '$1' %}"
+  'extends':
+    'prefix': 'extends'
+    'body': '{% extends "$1" %}'
+  'include':
+    'prefix': 'include'
+    'body': "{% include '$1' %}"
+  'comment':
+    'prefix': 'comment'
+    'body': '{% comment %}$1\n{% endcomment %}'
+  'url':
+    'prefix': 'url'
+    'body': "{% url '$1' %}"
